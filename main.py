@@ -73,9 +73,10 @@ if __name__ == '__main__':
             '[2]- Monto total de tarea',
             '[3]- Lista beneficiarios ayuda',
             '[4]- Calcular sueldos',
-            '[5]- Tesorero',
-            '[6]- Gerente',
+            '[5]- Funcionalidad para Tesorero',
+            '[6]- Funcionalidades para Gerente',
             '[7]- Cambiar usuario',
+            '[8]- Cerrar sesión',
             '[0]- Salir'])
 
     miMenu.showMenu('Usuario: {0}'.format(miLogin.getNivel().upper()))
@@ -124,8 +125,8 @@ if __name__ == '__main__':
         elif op == 8:
             #Cierro sesion con el usuario actual
             miLogin.cerrarSesion()
-
-                
+            input('Presione ENTER para continuar...')
+     
         miMenu.showMenu('Usuario: {0}'.format(miLogin.getNivel().upper()))
         op = miMenu.selectOption() 
 
