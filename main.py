@@ -122,7 +122,7 @@ if __name__ == '__main__':
             miLogin.login()
             input('Presione ENTER para continuar...')
         elif op == 8:
-            #Cierro secion con el usuario actual
+            #Cierro sesion con el usuario actual
             miLogin.cerrarSesion()
 
                 
